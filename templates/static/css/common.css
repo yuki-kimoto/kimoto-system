@@ -119,6 +119,7 @@
     margin:7px 0 12px 0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
+    text-align:center;
   }
   h2 a, h2 a:visited {
     text-decoration:none;
@@ -126,13 +127,12 @@
   }
   h3 {
     font-size:21px;
-    border-top:4px solid #2090E0;
     padding:16px 0px 15px 18px;
     letter-spacing:0.5px;
     margin:15px 0 10px 0;
-    background:#F3F3Fa;
     margin-top:40px;
     color:#3c3c33;
+    text-align:center;
   }
   h4 {
     font-size:18px;
@@ -176,13 +176,20 @@
   table th {
     border:1px solid #ddd;
     padding:7px;
-    background:#eee;
+    background:#7Ec5F6;
     font-weight:bold;
+    font-size:14px;
+    border-right:none;
+    border-left:none;
+    padding:10px 10px;
   }
 
   table td {
     border:1px solid #ddd;
     padding:7px;
+    border-right:none;
+    border-left:none;
+    padding:10px 10px;
   }
   
   /* advanced */
