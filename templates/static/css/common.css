@@ -171,25 +171,33 @@
   table {
     border-collapse: collapse;
     margin-left:15px;
+    width:calc(100% - 30px);
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:15px;
+    margin-bottom:50px;
+    margin-top:50px;
+  }
+  
+  table tr {
+    border:1px solid #83b0de;
+    border-right:none;
+    border-left:none;
   }
 
   table th {
-    border:1px solid #ddd;
     padding:7px;
-    background:#7Ec5F6;
+    background:#dbedff;
     font-weight:bold;
+    padding:20px 20px;
     font-size:14px;
-    border-right:none;
-    border-left:none;
-    padding:10px 10px;
+    color:#000;
   }
 
   table td {
-    border:1px solid #ddd;
     padding:7px;
-    border-right:none;
-    border-left:none;
-    padding:10px 10px;
+    padding:20px 20px;
   }
   
   /* advanced */
@@ -322,5 +330,23 @@
     background-size:41px;
     height:100%;
   }
+  
+  table tr {
+    border-top:none;
+    border-color:#ddd;
+  }
+  table th {
+    width:100%;
+    display:block;
+    text-align:left;
+    background:none;
+    padding:12px 0 3px 0;
+    font-size:15px;
+  }
 
+  table td {
+    width:100%;
+    display:block;
+    padding:3px 0 12px 0;
+  }
 }
