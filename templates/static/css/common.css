@@ -167,8 +167,9 @@
     margin:10px 0;
     line-height:1.5;
   }
-
-  table {
+  
+  /* 会社情報 */
+  .corporate table {
     border-collapse: collapse;
     margin-left:15px;
     width:calc(100% - 30px);
@@ -180,13 +181,13 @@
     margin-top:50px;
   }
   
-  table tr {
+  .corporate table tr {
     border:1px solid #83b0de;
     border-right:none;
     border-left:none;
   }
 
-  table th {
+  .corporate table th {
     padding:7px;
     background:#dbedff;
     font-weight:bold;
@@ -195,9 +196,17 @@
     color:#000;
   }
 
-  table td {
+  .corporate table td {
     padding:7px;
     padding:20px 20px;
+  }
+  
+  /* アクセス */
+  .access-container {
+    width:calc(100% - 30px);
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
   }
   
   /* advanced */
