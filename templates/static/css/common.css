@@ -188,7 +188,7 @@
   .corporate table {
     border-collapse: collapse;
     margin-left:15px;
-    width:calc(100% - 30px);
+    width:100%;
     max-width:960px;
     margin-left:auto;
     margin-right:auto;
