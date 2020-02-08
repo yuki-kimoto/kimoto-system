@@ -114,16 +114,20 @@
     font-size:14px;
     font-weight:bold;
   }
-  h2 {
-    font-size:28px;
-    margin:7px 0 12px 0;
+  .corporate h2 {
+    font-size:32px;
+    margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
+    background-image:url(/images/corporate/corporate-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
   }
-  h2 a, h2 a:visited {
+  .corporate h2 a, .corporate h2 a:visited {
     text-decoration:none;
-    color:#000;
   }
   h3 {
     font-size:21px;
