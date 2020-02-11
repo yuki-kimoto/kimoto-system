@@ -16,27 +16,6 @@
     text-decoration:none;
   }
   
-  /* header */
-  .header {
-    position:fixed;
-    width:100%;
-    margin:0 auto;
-    background:#fff;
-    border-bottom:1px solid #D9D9D0;
-    height:58px;
-    display:flex;
-  }
-  
-  .menu_button {
-    width:58px;
-    display:none;
-    cursor:pointer;
-    background:#2E75B6;
-  }
-  .menu_button img {
-    width:99%;
-  }
-  
   /* footer */
   .footer {
     background:#1A1A1A;
@@ -85,10 +64,30 @@
   .side {
     display:none;
   }
+
+  /* header */
+  .header {
+    position:fixed;
+    width:100%;
+    margin:0 auto;
+    background:#fff;
+    border-bottom:1px solid #D9D9D0;
+    height:58px;
+    overflow:hidden;
+  }
+
+  .header_title {
+    height:100%;
+    width:180px;
+    float:left;
+    overflow:hidden;
+  }
   
   /* tags */
   h1 {
-    width:187px;
+    width:100%;
+    float:left;
+    height:100%;
   }
   h1 a, h1 a:visited {
     font-size:26px;
@@ -105,19 +104,35 @@
   h1 img {
     width:90px;
   }
-  .header ul {
-    display:flex;
-    flex-wrap:wrap;
+  .header_menu_button {
+    width:58px;
+    float:left;
+    background:#2E75B6;
+    cursor:pointer;
+    display:none;
   }
-  .header li a {
+  .header_menu_button img {
+    width:100%;
+  }
+  .header_menu_pc {
+    width:calc(100% - 180px);
+    background:white;
+    float:left;
     height:100%;
   }
-  .header li img {
+  .header_menu_pc li {
+    height:100%;
+    display:inline-block;
+  }
+  .header_menu_pc li a {
+    height:100%;
+  }
+  .header_menu_pc li img {
     width:16px;
     vertical-align:-2px;
     margin-right:5px;
   }
-  .header li a {
+  .header_menu_pc li a {
     height:100%;
     padding-top:18px;
     padding-left:47px;
@@ -125,6 +140,12 @@
     color:#444;
     font-size:14px;
     font-weight:bold;
+  }
+  .menu_button {
+    display:none;
+  }
+  .header_menu_phone {
+    display:none;
   }
   .corporate h2 {
     font-size:32px;
@@ -307,7 +328,6 @@
   }
   
   .to_top {
-    display:flex;
     text-align:center;
     margin-top:30px;
   }
@@ -388,6 +408,10 @@
   .header-menu {
     display:block;
   }
+  .header_title {
+    width:100%;
+  }
+
   h1 {
     width:calc(100% - 58px);
   }
@@ -397,10 +421,35 @@
   h1 a {
     padding-top:13px;
   }
-  .header ul {
+  .header_menu_button {
+    display:block;
+    width:58px;
+  }
+  .header_menu_phone {
+    position:fixed;
+    top:58px;
+    width:100%;
+    display:block;
+    background:#eef;
     display:none;
   }
-  .menu_button {
+  .header_menu_phone li {
+    border-bottom:1px solid #fff;
+  }
+  .header_menu_phone a {
+    height:100%;
     display:block;
+    color:#444;
+    font-size:15px;
+    font-weight:bold;
+    padding:17px 15px;
+    background:#2E75B6;
+    color:white;
+  }
+  .header_menu_phone a:hover {
+    opacity:0.5;
+  }
+  .header_menu_pc {
+    display:none;
   }
 }
