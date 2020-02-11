@@ -73,14 +73,22 @@
     background:#fff;
     border-bottom:1px solid #D9D9D0;
     height:58px;
-    overflow:hidden;
+  }
+  .header:after {
+    display:block;
+    content:"";
+    clear:both;
   }
 
   .header_title {
     height:100%;
     width:180px;
     float:left;
-    overflow:hidden;
+  }
+  .header_title:after {
+    display:block;
+    content:"";
+    clear:both;
   }
   
   /* tags */
@@ -105,34 +113,27 @@
     width:90px;
   }
   .header_menu_button {
-    width:58px;
-    float:left;
-    background:#2E75B6;
-    cursor:pointer;
     display:none;
   }
-  .header_menu_button img {
-    width:100%;
-  }
-  .header_menu_pc {
+  .header_menu {
     width:calc(100% - 180px);
     background:white;
     float:left;
     height:100%;
   }
-  .header_menu_pc li {
+  .header_menu li {
     height:100%;
     display:inline-block;
   }
-  .header_menu_pc li a {
+  .header_menu a {
     height:100%;
   }
-  .header_menu_pc li img {
+  .header_menu li img {
     width:16px;
     vertical-align:-2px;
     margin-right:5px;
   }
-  .header_menu_pc li a {
+  .header_menu a {
     height:100%;
     padding-top:18px;
     padding-left:47px;
@@ -140,12 +141,6 @@
     color:#444;
     font-size:14px;
     font-weight:bold;
-  }
-  .menu_button {
-    display:none;
-  }
-  .header_menu_phone {
-    display:none;
   }
   .corporate h2 {
     font-size:32px;
@@ -405,11 +400,9 @@
     display:block;
     padding:3px 0 12px 0;
   }
-  .header-menu {
-    display:block;
-  }
   .header_title {
     width:100%;
+    border-bottom:1px solid white;
   }
 
   h1 {
@@ -424,32 +417,45 @@
   .header_menu_button {
     display:block;
     width:58px;
+    float:left;
+    background:#2E75B6;
+    cursor:pointer;
+    height:100%;
   }
-  .header_menu_phone {
+  .header_menu_button img {
+    height:100%;
+  }
+  .header_menu {
     position:fixed;
     top:58px;
     width:100%;
     display:block;
     background:#eef;
     display:none;
+    height:auto;
   }
-  .header_menu_phone li {
+  .header_menu li {
     border-bottom:1px solid #fff;
+    width:100%;
   }
-  .header_menu_phone a {
+  .header_menu a {
     height:100%;
     display:block;
-    color:#444;
+    color:white;
     font-size:15px;
     font-weight:bold;
     padding:17px 15px;
     background:#2E75B6;
     color:white;
   }
-  .header_menu_phone a:hover {
-    opacity:0.5;
-  }
-  .header_menu_pc {
+  .header_menu img {
     display:none;
   }
+  .header_menu a:hover {
+    opacity:0.5;
+  }
+  .header {
+    border-bottom:none;
+  }
+
 }

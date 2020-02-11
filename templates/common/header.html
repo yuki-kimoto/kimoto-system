@@ -1,15 +1,31 @@
+<script>
+$(function() {
+  $(window).on('resize', function () {
+    if ($(window).width() > 960) {
+      $('.header_menu').show();
+    }
+    else if ($(window).width() <= 960) {
+      $('.header_menu').hide();
+    }
+  });
+  
+  $(document).on('click', function (event) {
+    if(!$(event.target).closest('.header_menu, .header_menu_button').length) {
+      $('.header_menu').hide();
+    }
+  });
+});
+</script>
+
 <!-- header -->
 <div class="header_title">
   <h1>
     <a href="/"><img src="/images/kimoto-system-logo.png"></a>
   </h1>
-  <div class="header_menu_button" onclick="$('.header_menu_phone').toggle()">
+  <div class="header_menu_button" onclick="$('.header_menu').toggle()">
     <img src="/images/header/menu-icon.png">
   </div>
 </div>
-<ul class="header_menu_pc">
+<ul class="header_menu">
   <li><a href="/corporate.html"><img src="/images/header/corporate-icon.png">会社情報</a></li>
-</ul>
-<ul class="header_menu_phone">
-  <li><a href="/corporate.html">会社情報</a></li>
 </ul>
