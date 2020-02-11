@@ -326,7 +326,7 @@
   }
 
 /* Tablet and Smart phone */
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:960px) {
   .content {
     margin:0;
     padding:0;
