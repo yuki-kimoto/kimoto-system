@@ -29,11 +29,12 @@
   
   .menu_button {
     width:58px;
-    padding:10px;
     display:none;
+    cursor:pointer;
+    background:#2E75B6;
   }
   .menu_button img {
-    width:100%;
+    width:99%;
   }
   
   /* footer */
@@ -398,5 +399,8 @@
   }
   .header ul {
     display:none;
+  }
+  .menu_button {
+    display:block;
   }
 }
