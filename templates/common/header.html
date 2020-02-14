@@ -3,6 +3,7 @@ $(function() {
   $(window).on('resize', function () {
     if ($(window).width() > 960) {
       $('.header_menu').show();
+      $('.header_menu').css('display', 'flex');
     }
     else if ($(window).width() <= 960) {
       $('.header_menu').hide();
@@ -20,7 +21,6 @@ $(function() {
     <img src="/images/header/menu-icon.png">
   </div>
   <ul class="header_menu">
-    <li><a href="/corporate.html"><img src="/images/header/corporate-icon.png">会社情報</a></li>
     <li><a href="/corporate.html"><img src="/images/header/corporate-icon.png">会社情報</a></li>
   </ul>
 </div>
