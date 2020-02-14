@@ -356,6 +356,7 @@
   .header_menu {
     width:100%;
     flex-wrap:wrap;
+    display:none;
   }
   .header_menu li {
     width:100%;
