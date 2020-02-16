@@ -214,8 +214,6 @@
   .services li {
     width:50%;
     border:1px solid #ddd;
-    border-bottom:none;
-    border-right:none;
   }
   .services li a {
     display:block;
@@ -232,13 +230,17 @@
     vertical-align:-17px;
     margin-right:10px;
   }
-  .services li:nth-child(2) {
-    border-right:1px solid #ddd;
+  .services li:nth-child(odd) {
+    border-bottom:none;
   }
-  .services li:nth-last-child(1) {
-    border-bottom:1px solid #ddd;
+  .services li:nth-child(even) {
+    border-left:none;
+    border-bottom:none;
   }
   .services li:nth-last-child(2) {
+    border-bottom:1px solid #ddd;
+  }
+  .services li:last-child {
     border-bottom:1px solid #ddd;
   }
   
