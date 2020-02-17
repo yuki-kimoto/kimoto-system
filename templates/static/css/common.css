@@ -466,17 +466,15 @@
     text-align:center;
   }
   
-  .learning ul {
-    display:flex;
-    flex-wrap:wrap;
+  .learning table {
+    border-collapse:collapse;
+    width:100%;
   }
-  .learning li {
+  .learning td {
     width:50%;
     border:1px solid #ddd;
-    border-bottom:none;
-    border-right:none;
   }
-  .learning li a {
+  .learning td a {
     display:block;
     width:100%;
     padding:10px;
@@ -484,21 +482,12 @@
     height:100%;
     color:#2F2F22;
   }
-  .learning li a:hover {
+  .learning td a:hover {
     opacity:0.8;
   }
-  .learning li img {
+  .learning td img {
     vertical-align:-17px;
     margin-right:10px;
-  }
-  .learning li:nth-child(2) {
-    border-right:1px solid #ddd;
-  }
-  .learning li:nth-last-child(1) {
-    border-bottom:1px solid #ddd;
-  }
-  .learning li:nth-last-child(2) {
-    border-bottom:1px solid #ddd;
   }
   
   /* アクセス */
@@ -654,11 +643,12 @@
     background:#3E85C6
   }
 
-  .learning li {
-    width:100%;
+  .learning table {
+    border-bottom:1px solid #ddd;
   }
-
-  .learning li {
-    border-right:1px solid #ddd;
+  .learning td {
+    display:block;
+    border-bottom:none;
+    width:100%;
   }
 }
