@@ -208,12 +208,23 @@
   }
   
   .services ul {
+    width:calc(100% - 16px);
+    margin-left:auto;
+    margin-right:auto;
     display:flex;
     flex-wrap:wrap;
   }
   .services li {
-    width:50%;
+    width:calc(50% - 4px);
     border:1px solid #ddd;
+    margin-top:4px;
+    margin-bottom:4px;
+  }
+  .services li:nth-child(2n + 1) {
+    margin-right:4px;
+  }
+  .services li:nth-child(2n) {
+    margin-left:4px;
   }
   .services li a {
     display:block;
@@ -230,19 +241,7 @@
     vertical-align:-17px;
     margin-right:10px;
   }
-  .services li:nth-child(odd) {
-    border-bottom:none;
-  }
-  .services li:nth-child(even) {
-    border-left:none;
-    border-bottom:none;
-  }
-  .services li:nth-last-child(2) {
-    border-bottom:1px solid #ddd;
-  }
-  .services li:last-child {
-    border-bottom:1px solid #ddd;
-  }
+
   
   /* 会社情報 */
   .corporate h2 {
