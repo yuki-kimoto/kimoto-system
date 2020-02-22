@@ -1,0 +1,136 @@
+<style>
+  .mail-form h2 {
+    font-size:32px;
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .mail-form form {
+    width:calc(100% - 30px);
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:30px;
+  }
+  /* メールフォーム */
+  .mail-form {
+    background:#eee;
+  }
+  .mail-form-title {
+    font-weight:bold;
+    margin-bottom:3px;
+    letter-spacing:1px;
+  }
+  
+  .mail-form label {
+    margin-bottom:19px;
+    display:block;
+    font-size:20px;
+  }
+  .mail-form input {
+    width:100%;
+    padding:5px;
+    font-size:20px;
+  }
+  .mail-form textarea {
+    width:100%;
+    min-height:400px;
+    font-size:20px;
+  }
+  .mail-form button {
+    width:100%;
+    background:#f7338b;
+    color:white;
+    border:none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    font-size:27px;
+    border-radius:5px;
+    margin-bottom:30px;
+    padding:10px 0 7px 0;
+    cursor:pointer;
+  }
+  .mail-form-success {
+　  padding-top:30px;
+    padding-bottom:30px;
+  }
+  .mail-form-errors {
+    color:red;
+  }
+  .footer {
+    margin-top:0;
+  }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+  $(function() {
+    $('.mail-form button').on('click', function () {
+      var form_values = $('.mail-form form').serialize();
+      $.post(
+        "/mail.cgi",
+        form_values,
+        function (data) {
+          if (data.success) {
+            $('.mail-form').html('<div class="mail-form-success">お見積りを受け付けました。<br>ご指定していただいたメールアドレスに、返信します。</div>');
+          }
+          else {
+            // エラーメッセージ
+            var errors = data.errors;
+            $('.mail-form-errors').empty();
+            for (var i = 0; i < errors.length; i++) {
+              var error = errors[i];
+              var li = $('<li></li>');
+              li.text(error);
+              $('.mail-form-errors').append(li);
+            }
+          }
+        },
+        "json"
+      );
+    });
+  });
+</script>
+
+
+<div class="mail-form">
+  <h2>
+    <div>お見積り</div>
+  </h2>
+  <ul class="mail-form-errors">
+  </ul>
+  <form>
+    <label>
+      <div class="mail-form-title">
+        会社名(担当者様名):
+      </div>
+      <div class="mail-form-body">
+        <input type="text" name="name"><br>
+      </div>
+    </label>
+    <label>
+      <div class="mail-form-title">
+        メールアドレス:
+      </div>
+      <div class="mail-form-body">
+        <input type="text" name="email">
+      </div>
+    </label>
+    <label>
+      <div class="mail-form-title">
+        実現したい内容をもれなくお書きください:
+      </div>
+      <div class="mail-form-body">
+        <textarea name="message"></textarea>
+      </div>
+    </label>
+    <div>
+      <button type="button">見積もりを送信</button>
+    </div>
+  </form>
+</div>
