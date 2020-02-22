@@ -22,6 +22,7 @@
     padding:13px 0;
     color:white;
     font-size:16px;
+    margin-top:50px;
   }
   
   /* container */
@@ -129,15 +130,15 @@
   /* サービス */
   .services h2 {
     font-size:32px;
+    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
-    background-image:url(/images/services/services-image.jpg);
     background-position:50% 50%;
+    color:black;
     color:white;
-    height:300px;
-    padding-top:140px;
+    padding-top:30px;
   }
   .services h2 a, .services h2 a:visited {
     text-decoration:none;
@@ -177,43 +178,6 @@
     line-height:1.9;
   }
 
-  .services h2 {
-    font-size:32px;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/services/services-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .services h2 a, .services h2 a:visited {
-    text-decoration:none;
-  }
-  .services_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .services h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
-  }
-  
   .services ul {
     width:calc(100% - 16px);
     margin-left:auto;
