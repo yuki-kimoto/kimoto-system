@@ -525,6 +525,29 @@
     padding:7px;
     padding:20px 20px;
   }
+  .recruit ul {
+    width:100%;
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+  }
+  .recruit ul li {
+    border:1px solid #ddd;
+    border-bottom:none;
+  }
+  .recruit ul li:last-child {
+    border-bottom:1px solid #ddd;
+  }
+  .recruit ul li a {
+    display:block;
+    width:100%;
+    padding:15px 10px 13px 10px;
+    color:#554;
+  }
+  .recruit ul li a:hover {
+    opacity:0.8;
+  }
 
   /* メールフォーム */
   .mail-form {
@@ -691,6 +714,9 @@
   }
   .index-mitumori-jikan {
     letter-spacing:0;
+  }
+  .recruit ul {
+    margin-top:0;
   }
 
 }
