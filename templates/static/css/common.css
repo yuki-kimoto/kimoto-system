@@ -257,19 +257,37 @@
     margin-right:10px;
   }
 
-  
-  /* 会社情報 */
-  .corporate h2 {
+/*
+  .learning h2 {
     font-size:32px;
-    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
+    background-image:url(/images/learning/learning-image.jpg);
     background-position:50% 50%;
-    color:black;
     color:white;
-    padding-top:30px;
+    height:300px;
+    padding-top:140px;
+  }
+  .learning h2 a, .learning h2 a:visited {
+    text-decoration:none;
+  }
+*/
+
+  
+  /* 会社情報 */
+  .corporate h2 {
+    font-size:32px;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    background-image:url(/images/corporate/corporate-image.jpg);
+    background-position:50% 50%;
+    color:white;
+    height:300px;
+    padding-top:140px;
   }
   .corporate h2 a, .corporate h2 a:visited {
     text-decoration:none;
@@ -714,5 +732,15 @@
   }
 
   .recruit table td {
+  }
+
+  .learning h2 {
+    background-position:35% 50%;
+    background-size:600px;
+  }
+
+  .corporate h2 {
+    background-position:90% 25%;
+    background-size:600px;
   }
 }
