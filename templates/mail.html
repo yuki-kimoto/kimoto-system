@@ -36,30 +36,58 @@
   </ul>
   <form>
     <div class="mail-form-title">
-      サービス
+      会社名 (個人事業主様の場合は屋号)
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="company_name"><br>
+    </div>
+    <div class="mail-form-title">
+      担当者様名 (個人事業主様の場合は氏名)
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="staff_name"><br>
+    </div>
+    <div class="mail-form-title">
+      メールアドレス
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="email">
+    </div>
+    <div class="mail-form-title">
+      電話番号
+    </div>
+    <div class="mail-form-body">
+      <input type="text" name="tel">
+    </div>
+    <div class="mail-form-title">
+      サービス・基本価格を選択
     </div>
     <div class="mail-form-body">
       <ul class="mail-form-radio">
         <li>
-          <input type="radio" checked=checked name="service" value="Webシステム開発スタートアップパッケージ基本価格 月額29万8000円" id="service1">
+          <input type="radio" checked=checked name="service" value="1" id="service1">
           <label for="service1">Webシステム開発スタートアップパッケージ<br>基本価格 月額29万8000円</label>
         </li>
         <li>
-          <input type="radio" name="service" value="Webシステム開発マネージドパッケージ 基本価格 月額59万8000円" id="service2">
+          <input type="radio" name="service" value="2" id="service2">
           <label for="service2">Webシステム開発マネージドパッケージ<br>基本価格 月額59万8000円</label>
         </li>
         <li>
-          <input type="radio" name="service" value="Webシステム運用保守パッケージ 基本価格 月額29万8000円" id="service3">
-          <label for="service3">Webシステム運用保守パッケージ<br>基本価格 月額29万8000円</label>
+          <input type="radio" name="service" value="3" id="service3">
+          <label for="service3">Webシステム運用保守ライトパッケージ<br>基本価格 月額29万8000円</label>
+        </li>
+        <li>
+          <input type="radio" name="service" value="4" id="service4">
+          <label for="service4">Webシステム運用保守マネージドパッケージ<br>基本価格 月額59万8000円</label>
         </li>
       </ul>
     </div>
     <div class="mail-form-title">
-      契約期間
+      開発期間 - ご希望の開発期間を選択
     </div>
     <div class="mail-form-body">
       <select>
-        <option value="0">▼契約期間</option>
+        <option value="0">▼開発期間</option>
         <option value="3">3ヵ月</option>
         <option value="4">4ヵ月</option>
         <option value="5">5ヵ月</option>
@@ -70,11 +98,10 @@
         <option value="10">10ヵ月</option>
         <option value="11">11ヵ月</option>
         <option value="12">12ヵ月</option>
-        <option value="13">1年以上～</option>
       </select>
     </div>
     <div class="mail-form-title">
-      業種
+      業種 - 開発するシステムの業種を選択
     </div>
     <div class="mail-form-body">
       <select>
@@ -102,31 +129,7 @@
       </select>
     </div>
     <div class="mail-form-title">
-      会社名
-    </div>
-    <div class="mail-form-body">
-      <input type="text" name="company_name"><br>
-    </div>
-    <div class="mail-form-title">
-      担当者様名
-    </div>
-    <div class="mail-form-body">
-      <input type="text" name="staff_name"><br>
-    </div>
-    <div class="mail-form-title">
-      メールアドレス
-    </div>
-    <div class="mail-form-body">
-      <input type="text" name="email">
-    </div>
-    <div class="mail-form-title">
-      電話番号
-    </div>
-    <div class="mail-form-body">
-      <input type="text" name="tel">
-    </div>
-    <div class="mail-form-title">
-      実現したい内容を記入
+      実現したいWebシステムの内容を記入
     </div>
     <div class="mail-form-body">
       <textarea name="message"></textarea>
