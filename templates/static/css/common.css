@@ -176,7 +176,7 @@
 
   /* トップページ ニュース */
   .index-news {
-    
+    padding-bottom:30px;
   }
   .index-news h2 {
     text-align:center;
@@ -198,6 +198,34 @@
   .index-news td {
     padding:15px;
   }
+
+  .index-content-list {
+    background:#fcfeff;
+    border-top:1px solid #eeeeef;
+  }
+  .index-content-list a, .index-content-list a:visited {
+    color:#333;
+  }
+  .index-content-list {
+    padding:35px;
+    line-height:1.7;
+  }
+  .index-content-list b {
+    letter-spacing:2px;
+    margin-bottom:5px;
+    font-size:105%;
+  }
+  .index-content-list-content {
+    display:flex;
+    width:calc(100% - 30px);
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .index-content-list-content > div {
+    width:33.3%;
+  }
+
   /* サービス */
   .services {
     padding-bottom:50px;
@@ -216,6 +244,7 @@
   }
   .services h2 a, .services h2 a:visited {
     text-decoration:none;
+    letter-spacing:1px;
   }
   .services_message {
     text-align:center;
