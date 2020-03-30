@@ -784,8 +784,8 @@
     letter-spacing:1px;
     text-align:center;
     color:white;
-    padding-top:16px;
-    padding-bottom:13px;
+    padding-top:23px;
+    padding-bottom:20px;
   }
   .mail-form form {
     width:calc(100% - 30px);
@@ -796,12 +796,16 @@
   }
   .mail-form-title {
     font-weight:bold;
-    margin-bottom:3px;
+    margin-bottom:0px;
     letter-spacing:1px;
+    font-size:17px;
+  }
+  .mail-form-body {
+    margin-bottom:25px;
   }
   .mail-form input[type=text] {
     width:100%;
-    padding:10px 5px;
+    padding:10px 10px;
     font-size:20px;
     border:1px solid #e3c791;
   }
@@ -826,11 +830,11 @@
     cursor:pointer;
   }
   .mail-form input[type=radio]:checked + label {
-    background:#ffe4b5;
+    background:#e6ffeb;
   }
   .mail-form select {
     width:100%;
-    padding:10px 5px;
+    padding:10px 10px;
     font-size:20px;
     border:1px solid #e3c791;
   }
@@ -838,7 +842,7 @@
     width:100%;
     min-height:400px;
     font-size:20px;
-    padding:10px 5px;
+    padding:10px 10px;
     border:1px solid #e3c791;
   }
   .mail-form button {
