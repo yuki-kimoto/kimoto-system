@@ -121,6 +121,7 @@
   .index {
   }
   .index-mitumori {
+    border-top:1px solid #eeeeef;
     padding-top:80px;
     padding-bottom:80px;
   }
@@ -176,7 +177,8 @@
 
   /* トップページ ニュース */
   .index-news {
-    padding-bottom:30px;
+    padding:50px 0;
+    border-top:1px solid #eeeeef;
   }
   .index-news h2 {
     text-align:center;
@@ -198,32 +200,49 @@
   .index-news td {
     padding:15px;
   }
-
+  
+  /* コンテンツ一覧 */
   .index-content-list {
-    background:#fcfeff;
+    padding:50px 0;
+  }
+  .index-content-list h2 {
+    text-align:center;
+    font-size:26px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    
+  }
+  .index-content-list {
     border-top:1px solid #eeeeef;
   }
   .index-content-list a, .index-content-list a:visited {
     color:#333;
+    display:block;
   }
-  .index-content-list {
-    padding:35px;
-    line-height:1.7;
+  .index-content-list ul {
+    display:flex;
+    flex-wrap:wrap;
+    width:calc(100% - 30px);
+    max-width:960px;
+    margin:0 auto;
+  }
+  .index-content-list li {
+    width:33.3%;
+    text-align:center;
+    font-size:19px;
+    line-height:1.8;
   }
   .index-content-list b {
     letter-spacing:2px;
     margin-bottom:5px;
     font-size:105%;
+    display:block;
   }
-  .index-content-list-content {
-    display:flex;
-    width:calc(100% - 30px);
-    max-width:800px;
-    margin-left:auto;
-    margin-right:auto;
+  .index-content-list a, .index-content-list:visited {
+    color:#333;
   }
-  .index-content-list-content > div {
-    width:33.3%;
+  .index-content-list a:hover {
+    opacity:0.8;
   }
 
   /* サービス */
@@ -241,6 +260,7 @@
     color:black;
     color:white;
     padding-top:30px;
+    padding-bottom:30px;
   }
   .services h2 a, .services h2 a:visited {
     text-decoration:none;
@@ -316,23 +336,88 @@
     margin-right:10px;
   }
 
-/*
-  .learning h2 {
+  /* 開発実績 */
+  .achieve {
+    padding-bottom:50px;
+  }
+  .achieve h2 {
     font-size:32px;
+    background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
-    background-image:url(/images/learning/learning-image.jpg);
     background-position:50% 50%;
+    color:black;
     color:white;
-    height:300px;
-    padding-top:140px;
+    padding-top:30px;
   }
-  .learning h2 a, .learning h2 a:visited {
+  .achieve h2 a, .achieve h2 a:visited {
     text-decoration:none;
+    letter-spacing:1px;
   }
-*/
+  .achieve_message {
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background: #1E65A6;
+    background-size:4px 4px;
+    padding:13px 0;
+    letter-spacing:1px;
+    line-height:1.9;
+    font-size:16px;
+  }
+
+  .achieve h3 {
+    font-size:26px;
+    padding:16px 0px 15px 18px;
+    letter-spacing:0.5px;
+    margin:15px 0 10px 0;
+    margin-top:40px;
+    color:#3c3c33;
+    text-align:center;
+  }
+  .achieve h4 {
+    font-size:18px;
+    font-weight:bold;
+    padding:6px 0px 4px 5px;
+    letter-spacing:0.5px;
+    margin:15px 0 5px 0;
+  }
+  .achieve p {
+    font-size:16px;
+    color:#111;
+    margin:5px 0;
+    line-height:1.9;
+  }
+
+  .achieve ul {
+    width:calc(100% - 16px);
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .achieve li {
+    width:100%;
+    border:1px solid #ddd;
+    margin-top:4px;
+    margin-bottom:4px;
+  }
+  .achieve li a {
+    display:block;
+    width:100%;
+    padding:20px;
+    color:#33f;
+    height:100%;
+    color:#2F2F22;
+  }
+  .achieve li a:hover {
+    opacity:0.8;
+  }
+  .achieve li img {
+    vertical-align:-17px;
+    margin-right:10px;
+  }
 
   
   /* 会社情報 */
@@ -840,6 +925,7 @@
 
   /* トップページ 見積もり */
   .index-mitumori {
+    
   }
   .index-mitumori h2 {
     font-size:28px;
@@ -894,4 +980,10 @@
     background-position:90% 25%;
     background-size:600px;
   }
+  
+  /* コンテンツ一覧 */
+  .index-content-list li {
+    width:50%;
+  }
+
 }
