@@ -804,6 +804,7 @@
   /* メールフォーム */
   .mail-form {
     background:#fff6e6;
+    padding-bottom:30px;
   }
   .mail-form h2 {
     font-size:32px;
@@ -855,11 +856,13 @@
   }
   .mail-form-radio label {
     display:block;
-    padding:10px 20px;
+    padding:10px 20px 10px 50px;
     cursor:pointer;
   }
   .mail-form input[type=radio]:checked + label {
-    background:#e6ffeb;
+    background:url(/images/mail/check.png) no-repeat;
+    background-size:30px;
+    background-position:12px 20px;
   }
   .mail-form select {
     width:100%;
