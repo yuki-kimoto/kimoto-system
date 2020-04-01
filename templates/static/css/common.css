@@ -895,6 +895,13 @@
   .mail-form-errors {
     color:red;
   }
+  .mail-form-note {
+    margin-bottom:30px;
+  }
+  .mail-form-note p {
+    color:#333;
+    margin-bottom:10px;
+  }
   .footer {
     margin-top:0;
   }
