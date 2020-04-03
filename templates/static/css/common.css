@@ -81,10 +81,13 @@
   .header_company_name {
     width:calc(100% - 180px - 120px * 5);
     background:white;
-    font-size:12px;
+    font-size:14px;
     color:#666;
-    padding-top:18px;
-    padding-left:18px;
+    padding-top:16px;
+    padding-left:20px;
+  }
+  .header_company_name p {
+    display:inline;
   }
 
   .header_site_title img {
@@ -916,7 +919,7 @@
   
   /* tags */
   .header_site_title {
-    width:calc(100% - 52px);
+    width:120px;
   }
   .header_site_title a {
     border-bottom:1px solid #ddd;
@@ -963,7 +966,15 @@
     width:100%;
   }
   .header_company_name {
-    display:none;
+    width:calc(100% - 120px - 52px);
+    border-bottom:1px solid #eeeeef;
+    padding-top:7px;
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+  }
+  .header_company_name p {
+    display:block;
   }
 
   /* 採用情報 */
