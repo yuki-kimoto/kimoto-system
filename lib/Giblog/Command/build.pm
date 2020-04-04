@@ -101,7 +101,11 @@ sub create_list {
   {
     my $content;
     $content = <<'EOS';
-<h2>Entries</h2>
+<div class="list">
+<h2>木本システムブログ</h2>
+<div class="list_description">
+  木本システムブログで、Webシステム開発の新規サービス・開発実績などをお届け。
+</div>
 EOS
     $content .= "<ul>\n";
     my $before_year = 0;
@@ -116,7 +120,7 @@ EOS
       if ($year != $before_year) {
         $content .= <<"EOS";
   <li style="list-style:none;">
-    <b>${year}</b>
+    <b>${year}年</b>
   </li>
 EOS
       }
@@ -143,11 +147,12 @@ EOS
       # Add list
       $content .= <<"EOS";
   <li style="list-style:none">
-    $month/$mday <a href="/$file_entry">$title</a>
+    <strong>${year}年${month}月${mday}日</strong><br> <a href="/$file_entry">$title</a>
   </li>
 EOS
     }
     $content .= "</ul>\n";
+    $content .= qq|</div><!-- class="list" ->\n|;
     
     # Set content
     $data->{content} = $content;

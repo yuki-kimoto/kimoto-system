@@ -923,7 +923,38 @@
   .footer {
     margin-top:0;
   }
-
+  
+  /* ブログ記事一覧(list.html) */
+  .list {
+    padding:30px 0;
+    width:calc(100% - 30px);
+    max-width:800px;
+    margin:0 auto;
+  }
+  .list h2 {
+    text-align:center;
+  }
+  .list li {
+    margin-bottom:15px;
+    line-height:1.8;
+  }
+  .list h2 a {
+    color:#333;
+    font-size:32px;
+  }
+  .list_description {
+    text-align:center;
+  }
+  .list li b {
+    display:block;
+    text-align:center;
+    font-size:26px;
+    margin-top:10px;
+  }
+  .list  b {
+    
+  }
+  
 /* Tablet and Smart phone */
 @media only screen and (max-width:960px) {
   .header {
