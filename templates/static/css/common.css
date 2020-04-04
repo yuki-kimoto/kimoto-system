@@ -972,6 +972,7 @@
   }
   .blog h3 {
     margin-top:30px;
+    margin-bottom:15px;
     text-align:center;
     color:#333;
     font-size:32px;
@@ -979,18 +980,30 @@
   .blog_description {
     text-align:center;
   }
+  .blog ul {
+    margin-top:15px;
+  }
   .blog li {
-    margin-bottom:15px;
     line-height:1.8;
+    border:1px solid #ddd;
+    padding:10px 20px;
+    border-bottom:none;
   }
-  .blog li b {
-    display:block;
-    text-align:center;
-    font-size:26px;
-    margin-top:10px;
+  .blog li:last-child {
+    border-bottom:1px solid #ddd;
   }
-  .blog  b {
-    
+  .blog table {
+    margin-top:15px;
+    border-collapse:collapse;
+    width:100%;
+  }
+  .blog table td, .blog table th {
+    border:1px solid #ddd;
+    padding:10px 20px;;
+  }
+  .blog table th {
+    width:220px;
+    text-align:right;
   }
   
 /* Tablet and Smart phone */
