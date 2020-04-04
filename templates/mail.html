@@ -11,6 +11,7 @@
           if (data.success) {
             $('.mail-form form').hide();
             $('.mail-form-success').show();
+            $('.mail-form-errors').hide();
           }
           else {
             // エラーメッセージ
@@ -22,6 +23,8 @@
               li.text(error);
               $('.mail-form-errors').append(li);
             }
+            $('.mail-form-errors').show();
+            $("html,body").animate({scrollTop:0},0);
           }
         },
         "json"
@@ -72,19 +75,19 @@
     <div class="mail-form-body">
       <ul class="mail-form-radio">
         <li>
-          <input type="radio" checked=checked name="service" value="1-Webシステム開発スタートアップパッケージ" id="service1">
+          <input type="radio" checked=checked name="service" value="1-Webシステム開発スタートアップパッケージ基本価格月額29万8000円" id="service1">
           <label for="service1">Webシステム開発スタートアップパッケージ<br>基本価格 月額29万8000円</label>
         </li>
         <li>
-          <input type="radio" name="service" value="2-Webシステム開発マネージドパッケージ" id="service2">
+          <input type="radio" name="service" value="2-Webシステム開発マネージドパッケージ基本価格月額59万8000円" id="service2">
           <label for="service2">Webシステム開発マネージドパッケージ<br>基本価格 月額59万8000円</label>
         </li>
         <li>
-          <input type="radio" name="service" value="3-Webシステム運用保守ライトパッケージ" id="service3">
+          <input type="radio" name="service" value="3-Webシステム運用保守ライトパッケージ基本価格月額29万8000円" id="service3">
           <label for="service3">Webシステム運用保守ライトパッケージ<br>基本価格 月額29万8000円</label>
         </li>
         <li>
-          <input type="radio" name="service" value="4-Webシステム運用保守マネージドパッケージ" id="service4">
+          <input type="radio" name="service" value="4-Webシステム運用保守マネージドパッケージ基本価格月額59万8000円" id="service4">
           <label for="service4">Webシステム運用保守マネージドパッケージ<br>基本価格 月額59万8000円</label>
         </li>
       </ul>
