@@ -162,10 +162,10 @@ EOS
   $api->add_page_link_to_first_h_tag($data);
 
   # Title
-  $data->{title} = "Entries - $config->{site_title}";
+  $data->{title} = "木本システムブログ - $config->{site_title}";
   
   # Description
-  $data->{description} = "Entries of $config->{site_title}";
+  $data->{description} = "木本システムブログで、Webシステム開発の新規サービス・開発実績などをお届け。$config->{site_title}";
 
   # Read common templates
   $api->read_common_templates($data);
