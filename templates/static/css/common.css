@@ -120,10 +120,6 @@
     opacity:0.8;
   }
 
-  .bottom {
-    display:none;
-  }
-  
   .index_top {
     background:#2E75B6;
     width:100%;
@@ -137,10 +133,10 @@
     flex-wrap:wrap;
   }
   .index_top > ul > li:first-child {
-    width:300px;
+    width:285px;
   }
   .index_top > ul > li:last-child {
-    width:calc(100% - 300px);
+    width:calc(100% - 285px);
     padding-bottom:50px;
   }
   .index_top img {
@@ -175,11 +171,8 @@
     max-width:960px;
     margin-left:auto;
     margin-right:auto;
-    display:flex;
-    flex-wrap:wrap;
   }
   .index_service li {
-    width:calc(50% - 20px);
     margin-left:10px;
     margin-right:10px;
     margin-bottom:20px;
