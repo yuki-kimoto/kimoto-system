@@ -103,10 +103,15 @@ sub create_list {
   {
     my $content;
     $content = <<'EOS';
+<style>
+  .bottom {
+    display:none;    
+  }
+</style>
 <div class="list">
-<h2>木本システムブログ</h2>
+<h2>ブログ</h2>
 <div class="list_description">
-  木本システムブログで、Webシステム開発の新規サービス・開発実績などをお届け。
+  ブログで、Webシステム開発の新規サービス・開発実績などをお届け。
 </div>
 EOS
     $content .= "<ul>\n";
@@ -154,7 +159,7 @@ EOS
 EOS
     }
     $content .= "</ul>\n";
-    $content .= qq|</div><!-- class="list" ->\n|;
+    $content .= qq|</div><!-- class="list" -->\n|;
     
     # Set content
     $data->{content} = $content;
