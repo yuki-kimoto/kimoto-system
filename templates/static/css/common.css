@@ -132,20 +132,20 @@
     flex-wrap:wrap;
   }
   .index_top > ul > li:first-child {
-    width:275px;
+    width:250px;
   }
   .index_top > ul > li:last-child {
-    width:calc(100% - 275px);
-    padding-bottom:50px;
+    width:calc(100% - 250px);
+    padding-bottom:30px;
   }
   .index_top img {
     width:100%;
     display:block;
   }
   .index_top h2 {
-    font-size:32px;
+    font-size:28px;
     text-align:center;
-    padding-top:55px;
+    padding-top:45px;
   }
   .index_top_description {
     text-align:center;
