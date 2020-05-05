@@ -153,7 +153,22 @@
     margin-top:25px;
   }
   
-  
+  .index_link_allow {
+  }
+  .index_link_allow b {
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    font-weight:normal;
+    padding-top:9px;
+    font-size:22px;
+    background:#1fa347;
+    color:white;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+  }
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
@@ -227,16 +242,15 @@
     margin-right:10px;
     margin-bottom:10px;
     border:1px solid #ddd;
-    padding:27px 25px;
   }
   .index_why_perl a,.index_why_perl a:visited {
+    padding:27px 25px;
     display:block;
     width:100%;
     padding:30px 15px;
     font-size:20px;
     text-align:center;
-    color:white;
-    background:#2E75B6;
+    color:#333;
   }
   .index_why_perl_title {
     font-size:25px;
