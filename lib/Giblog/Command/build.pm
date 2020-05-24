@@ -111,7 +111,7 @@ sub create_list {
 <div class="list">
 <h2>ブログ</h2>
 <div class="list_description">
-  ブログで、Webシステム開発の新規サービス・開発実績などをお届け。
+  ブログで、システム開発の新規サービス・開発実績などをお届け。
 </div>
 EOS
     $content .= "<ul>\n";
@@ -172,7 +172,7 @@ EOS
   $data->{title} = "木本システムブログ - $config->{site_title}";
   
   # Description
-  $data->{description} = "木本システムブログで、Webシステム開発の新規サービス・開発実績などをお届け。$config->{site_title}";
+  $data->{description} = "木本システムブログで、システム開発の新規サービス・開発実績などをお届け。$config->{site_title}";
 
   # Read common templates
   $api->read_common_templates($data);
