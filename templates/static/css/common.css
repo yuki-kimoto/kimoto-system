@@ -17,6 +17,14 @@
     text-decoration:none;
   }
   
+  /* h3のデフォルトを定義。必要があれば、カスタマイズする */
+  h3 {
+    font-size:24px;
+    text-align:center;
+    margin:50px 0 40px 0;
+    letter-spacing:1px;
+  }
+  
   /* footer */
   .footer {
     font-size:15px;
@@ -89,11 +97,14 @@
   .header_company_name {
     width:calc(100% - 180px - 100px * 6);
     background:white;
-    font-size:14px;
-    color:#666;
     padding-top:10px;
     padding-left:34px;
     line-height:1.4;
+  }
+  .header_company_name h1 {
+    font-size:16px;
+    color:#666;
+    font-size:14px;
   }
   .header_company_name p {
     display:block;
@@ -155,7 +166,6 @@
     display:block;
   }
   .index .index_top h2 {
-    font-size:28px;
     text-align:center;
     padding-top:50px;
   }
@@ -183,7 +193,6 @@
   }
   /* トップページ */
   .index h2 {
-    font-size:24px;
   }
   
   /* トップページ サービス */
@@ -191,10 +200,7 @@
     padding:50px 0;
     padding-bottom:50px;
   }
-  .index_service h2 {
-    text-align:center;
-    margin-bottom:30px;
-    letter-spacing:1px;
+  .index_service h3 {
   }
   .index_service ul {
     width:calc(100% - 16px);
@@ -234,15 +240,11 @@
     font-size:105%;
   }
   .index_why_perl h2 {
-    font-size:31px;
     text-align:center;
     margin-bottom:20px;
     letter-spacing:2px;
   }
   .index_why_perl h3 {
-    font-size:23px;
-    margin-bottom:8px;
-    letter-spacing:1px;
   }
   .index_why_perl p {
     line-height:2;
@@ -281,7 +283,6 @@
   }
   .index-news h2 {
     text-align:center;
-    font-size:29px;
     letter-spacing:3px;
   }
   .index-news table {
@@ -306,7 +307,6 @@
   }
   .index-content-list h2 {
     text-align:center;
-    font-size:29px;
     letter-spacing:3px;
     margin-bottom:30px;
   }
@@ -344,7 +344,6 @@
     padding-bottom:60px;
   }
   .index-mitumori h2 {
-    font-size:36px;
     text-align:center;
     letter-spacing:8px;
     padding-bottom:25px;
@@ -407,7 +406,6 @@
     padding-bottom:50px;
   }
   .reason_entry h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -435,13 +433,6 @@
   }
 
   .reason_entry h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .reason_entry h4 {
     font-size:18px;
@@ -466,7 +457,6 @@
     padding-bottom:50px;
   }
   .services h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -495,13 +485,6 @@
   }
 
   .services h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .services h4 {
     font-size:18px;
@@ -557,7 +540,6 @@
     padding-bottom:50px;
   }
   .service_entry h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -584,13 +566,6 @@
     font-size:16px;
   }
   .service_entry h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .service_entry h4 {
     font-size:18px;
@@ -614,7 +589,6 @@
   .service_perl_web_devel_flow {
   }
   .service_perl_web_devel_flow h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -641,14 +615,6 @@
     font-size:16px;
   }
   .service_perl_web_devel_flow h3 {
-    width:calc(100% - 30px);
-    max-width:900px;
-    margin-left:auto;
-    margin-right:auto;
-    font-size:26px;
-    padding:0 0px 30px 0;
-    letter-spacing:1px;
-    color:#3c3c33;
   }
   .service_perl_web_devel_flow p {
     width:calc(100% - 30px);
@@ -682,7 +648,6 @@
     padding-bottom:50px;
   }
   .achieve h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -710,13 +675,6 @@
   }
 
   .achieve h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .achieve h4 {
     font-size:18px;
@@ -763,7 +721,6 @@
   
   /* 会社情報 */
   .corporate h2 {
-    font-size:32px;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
@@ -790,13 +747,6 @@
   }
 
   .corporate h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .corporate h4 {
     font-size:18px;
@@ -845,7 +795,6 @@
 
   /* 学習教材 */
   .learning h2 {
-    font-size:32px;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
@@ -872,13 +821,6 @@
   }
 
   .learning h3 {
-    font-size:26px;
-    padding:16px 0px 15px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .learning h4 {
     font-size:18px;
@@ -931,7 +873,6 @@
      padding-bottom:80px;
    }
   .recruit h2 {
-    font-size:32px;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
@@ -967,13 +908,6 @@
   }
 
   .recruit h3 {
-    font-size:26px;
-    padding:6px 0px 5px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:50px;
-    color:#3c3c33;
-    text-align:center;
   }
   .recruit h4 {
     font-size:18px;
@@ -1049,7 +983,6 @@
     padding-bottom:80px;
   }
   .message h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:20px 0 0px 0px;
@@ -1105,13 +1038,6 @@
     margin-bottom:20px;
   }
   .message h3 {
-    font-size:26px;
-    padding:6px 0px 5px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    margin-top:20px;
-    color:#3c3c33;
-    text-align:center;
   }
   /* メールフォーム */
   .mail-form {
@@ -1119,7 +1045,6 @@
     padding-bottom:30px;
   }
   .mail-form h2 {
-    font-size:32px;
     background: #fcae28;
     margin:0;
     padding:1px 0 0px 0px;
@@ -1249,7 +1174,6 @@
   }
   .list h2 a {
     color:#333;
-    font-size:32px;
   }
   .list_description {
     text-align:center;
@@ -1274,21 +1198,11 @@
   .achieve_entry h2 {
     text-align:center;
     margin-bottom:30px;
-    font-size:32px;
   }
   .achieve_entry h2 a {
     color:#333;
-    font-size:32px;
   }
   .achieve_entry h3 {
-    font-size:24px;
-    border-top:4px solid #2E75B6;
-    padding:15px 0px 14px 18px;
-    letter-spacing:0.5px;
-    margin:15px 0 10px 0;
-    background:#F5F5F5;
-    margin-top:30px;
-    margin-bottom:20px;
   }
   .achieve_entry_description {
     text-align:center;
@@ -1340,14 +1254,8 @@
   }
   .blog h2 a {
     color:#333;
-    font-size:32px;
   }
   .blog h3 {
-    margin-top:30px;
-    margin-bottom:15px;
-    text-align:center;
-    color:#333;
-    font-size:32px;
   }
   .blog_description {
     text-align:center;
@@ -1383,7 +1291,6 @@
 
   /* よくある質問 FAQ */
   .faq h2 {
-    font-size:32px;
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -1400,15 +1307,6 @@
   }
 
   .faq h3 {
-    font-size:26px;
-    width:calc(100% - 30px);
-    margin-right:auto;
-    margin-left:auto;
-    letter-spacing:0.5px;
-    margin:15px 0 25px 0;
-    margin-top:40px;
-    color:#3c3c33;
-    text-align:center;
   }
   .faq_item {
     width:calc(100% - 30px);
@@ -1579,7 +1477,6 @@
 
   /* トップページ 見積もり */
   .index-mitumori h2 {
-    font-size:30px;
     letter-spacing:3px;
   }
   .index-mitumori-button {
