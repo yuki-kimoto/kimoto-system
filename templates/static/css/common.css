@@ -27,7 +27,7 @@
   
   /* コンテンツを表示する中心の領域のデフォルト */
   .inside {
-    width:1310px;
+    max-width:1310px;
     margin:0 auto;
   }
   
@@ -120,10 +120,6 @@
     width:100%;
   }
   
-  .content_max_width {
-    max-width:1310px;
-  }
-  
   /* entry */
   .entry {
     background:white;
@@ -142,7 +138,6 @@
     background:white;
   }
   .header_content {
-    max-width:1310px;
     margin:0 auto;
     display:flex;
     height:60px;
@@ -258,7 +253,6 @@
   }
   .index_service ul {
     width:calc(100% - 16px);
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -304,7 +298,6 @@
   }
   .index_why_perl ul {
     width:calc(100% - 16px);
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -361,7 +354,6 @@
     display:flex;
     flex-wrap:wrap;
     width:calc(100% - 30px);
-    max-width:1310px;
     margin:0 auto;
   }
   .index-content-list li {
@@ -592,6 +584,10 @@
     font-size:16px;
   }
   .service_perl_web_devel_flow h3 {
+    max-width:900px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
   }
   .service_perl_web_devel_flow p {
     width:calc(100% - 30px);
@@ -601,10 +597,7 @@
     line-height:1.9;
   }
   .service_perl_web_devel_flow .background {
-    padding:50px 0 60px 0;
-  }
-  .service_perl_web_devel_flow .background:nth-child(2n) {
-    background:#fafafa;
+    padding:40px 0 0px 0;
   }
   .service_perl_web_devel_flow .number {
     display:inline-block;
@@ -653,21 +646,22 @@
   }
 
   .achieve ul {
-    width:calc(100% - 16px);
-    max-width:1310px;
-    margin-left:auto;
-    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
   }
   .achieve li {
     width:100%;
     border:1px solid #ddd;
     margin-top:4px;
     margin-bottom:4px;
+    border-radius:6px;
+    width:32.3%;
+    margin:5px 0.5%;
   }
   .achieve li a {
     display:block;
     width:100%;
-    padding:20px;
+    padding:30px;
     color:#33f;
     height:100%;
     color:#2F2F22;
@@ -820,7 +814,6 @@
   
   .recruit_description {
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     color:#333;
@@ -846,7 +839,6 @@
     border-collapse: collapse;
     margin-left:15px;
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     font-size:15px;
@@ -876,7 +868,6 @@
   }
   .recruit ul {
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     margin-top:30px;
@@ -930,7 +921,6 @@
   }
   .message_description {
     width:100%;
-    max-width:1310px;
     margin-left:auto;
     margin-right:auto;
     color:#333;
@@ -1367,5 +1357,8 @@
   }
   .index .page_description {
     margin-top:5px;
+  }
+  .achieve li {
+    width:100%;
   }
 }
