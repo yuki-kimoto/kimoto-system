@@ -109,10 +109,11 @@ sub create_list {
   }
 </style>
 <div class="list">
-<h2>ブログ</h2>
-<div class="list_description">
-  ブログで、システム開発の新規サービス・開発実績などをお届け。
+<h2>ニュース</h2>
+<div class="description">
+  木本システムの新規サービス情報をお届け。
 </div>
+<div class="inside">
 EOS
     $content .= "<ul>\n";
     my $before_year = 0;
@@ -159,6 +160,7 @@ EOS
 EOS
     }
     $content .= "</ul>\n";
+    $content .= "</div>\n";
     $content .= qq|</div><!-- class="list" -->\n|;
     
     # Set content
@@ -169,10 +171,10 @@ EOS
   $api->add_page_link_to_first_h_tag($data);
 
   # Title
-  $data->{title} = "木本システムブログ - $config->{site_title}";
+  $data->{title} = "ニュース - $config->{site_title}";
   
   # Description
-  $data->{description} = "木本システムブログで、システム開発の新規サービス・開発実績などをお届け。$config->{site_title}";
+  $data->{description} = "木本システムの、システム開発の新規サービスをお届け。$config->{site_title}";
 
   # Read common templates
   $api->read_common_templates($data);
