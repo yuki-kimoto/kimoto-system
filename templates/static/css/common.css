@@ -16,6 +16,18 @@
     color:#0000EE;
     text-decoration:none;
   }
+
+  /* h2のデフォルトを定義。必要があれば、カスタマイズする */
+  h2 {
+    background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+    padding-top:30px;
+    font-size:26px;
+  }
   
   /* h3のデフォルトを定義。必要があれば、カスタマイズする */
   h3 {
@@ -143,7 +155,7 @@
     background:#F8F9FA;
   }
   .index_top {
-    background:#2E75B6;
+    background: #1E65A6;
     width:100%;
     border-bottom:1px solid #eef;
     color:white;
@@ -165,14 +177,10 @@
     width:100%;
     display:block;
   }
-  .index .index_top h2 {
-    text-align:center;
-    padding-top:50px;
-  }
   .index_top_description {
     text-align:center;
-    font-size:23px;
-    margin-top:25px;
+    font-size:20px;
+    margin-top:18px;
   }
   
   .index_link_allow {
@@ -191,10 +199,6 @@
     height:50px;
     border-radius:25px;
   }
-  /* トップページ */
-  .index h2 {
-  }
-  
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
@@ -239,12 +243,10 @@
     color:#3159D5;
     font-size:105%;
   }
-  .index_why_perl h2 {
+  .index_why_perl h3 {
     text-align:center;
     margin-bottom:20px;
     letter-spacing:2px;
-  }
-  .index_why_perl h3 {
   }
   .index_why_perl p {
     line-height:2;
@@ -281,10 +283,6 @@
   .index-news {
     padding:50px 0;
   }
-  .index-news h2 {
-    text-align:center;
-    letter-spacing:3px;
-  }
   .index-news table {
     width:calc(100% - 30px);
     max-width:800px;
@@ -304,11 +302,6 @@
   /* トップページ 会社案内 */
   .index-content-list {
     padding:30px 0 30px 0;
-  }
-  .index-content-list h2 {
-    text-align:center;
-    letter-spacing:3px;
-    margin-bottom:30px;
   }
   .index-content-list a, .index-content-list a:visited {
     color:#787890;
@@ -342,11 +335,6 @@
     border-top:1px solid #eeeeef;
     padding-top:60px;
     padding-bottom:60px;
-  }
-  .index-mitumori h2 {
-    text-align:center;
-    letter-spacing:8px;
-    padding-bottom:25px;
   }
   .index-mitumori-button {
     text-align:center;
@@ -405,21 +393,6 @@
   .reason_entry {
     padding-bottom:50px;
   }
-  .reason_entry h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .reason_entry h2 a, .reason_entry h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
   .reason_entry_message {
     text-align:center;
     color:white;
@@ -455,22 +428,6 @@
   /* サービス */
   .services {
     padding-bottom:50px;
-  }
-  .services h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-    padding-bottom:30px;
-  }
-  .services h2 a, .services h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
   }
   .services_message {
     text-align:center;
@@ -539,21 +496,6 @@
   .service_entry {
     padding-bottom:50px;
   }
-  .service_entry h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .service_entry h2 a, .service_entry h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
   .service_entry_message {
     text-align:center;
     color:white;
@@ -587,21 +529,6 @@
 
   /* 開発の流れ */
   .service_perl_web_devel_flow {
-  }
-  .service_perl_web_devel_flow h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .service_perl_web_devel_flow h2 a, .service_perl_web_devel_flow h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
   }
   .service_perl_web_devel_flow_message {
     text-align:center;
@@ -646,21 +573,6 @@
   /* 開発実績 */
   .achieve {
     padding-bottom:50px;
-  }
-  .achieve h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .achieve h2 a, .achieve h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
   }
   .achieve_message {
     text-align:center;
@@ -720,20 +632,6 @@
 
   
   /* 会社情報 */
-  .corporate h2 {
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/corporate/corporate-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .corporate h2 a, .corporate h2 a:visited {
-    text-decoration:none;
-  }
   .corporate_message {
     text-align:center;
     color:white;
@@ -794,20 +692,6 @@
   }
 
   /* 学習教材 */
-  .learning h2 {
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/learning/learning-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .learning h2 a, .learning h2 a:visited {
-    text-decoration:none;
-  }
   .learning_message {
     text-align:center;
     color:white;
@@ -872,20 +756,6 @@
    .recruit {
      padding-bottom:80px;
    }
-  .recruit h2 {
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-image:url(/images/recruit/recruit-image.jpg);
-    background-position:50% 50%;
-    color:white;
-    height:300px;
-    padding-top:140px;
-  }
-  .recruit h2 a, .recruit h2 a:visited {
-    text-decoration:none;
-  }
   .recruit_message {
     text-align:center;
     color:white;
@@ -981,19 +851,6 @@
   /* 代表メッセージ */
   .message {
     padding-bottom:80px;
-  }
-  .message h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:20px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-  }
-  .message h2 a, .message h2 a:visited {
-    text-decoration:none;
   }
   .message_message {
     text-align:center;
@@ -1165,15 +1022,9 @@
     max-width:800px;
     margin:0 auto;
   }
-  .list h2 {
-    text-align:center;
-  }
   .list li {
     margin-bottom:15px;
     line-height:1.8;
-  }
-  .list h2 a {
-    color:#333;
   }
   .list_description {
     text-align:center;
@@ -1194,13 +1045,6 @@
     width:calc(100% - 30px);
     max-width:800px;
     margin:0 auto;
-  }
-  .achieve_entry h2 {
-    text-align:center;
-    margin-bottom:30px;
-  }
-  .achieve_entry h2 a {
-    color:#333;
   }
   .achieve_entry h3 {
   }
@@ -1248,15 +1092,6 @@
     max-width:800px;
     margin:0 auto;
   }
-  .blog h2 {
-    text-align:center;
-    margin-bottom:30px;
-  }
-  .blog h2 a {
-    color:#333;
-  }
-  .blog h3 {
-  }
   .blog_description {
     text-align:center;
   }
@@ -1290,24 +1125,6 @@
   }
 
   /* よくある質問 FAQ */
-  .faq h2 {
-    background: #1E65A6;
-    margin:0;
-    padding:1px 0 0px 0px;
-    letter-spacing:1px;
-    text-align:center;
-    background-position:50% 50%;
-    color:black;
-    color:white;
-    padding-top:30px;
-  }
-  .faq h2 a, .services h2 a:visited {
-    text-decoration:none;
-    letter-spacing:1px;
-  }
-
-  .faq h3 {
-  }
   .faq_item {
     width:calc(100% - 30px);
     max-width:900px;
@@ -1447,27 +1264,8 @@
   }
 
   /* 採用情報 */
-  .recruit table {
-  }
-  
-  .recruit table tr {
-  }
-
   .recruit table th {
     width:140px;
-  }
-
-  .recruit table td {
-  }
-
-  .learning h2 {
-    background-position:35% 50%;
-    background-size:600px;
-  }
-
-  .corporate h2 {
-    background-position:90% 25%;
-    background-size:600px;
   }
   
   /* コンテンツ一覧 */
@@ -1476,11 +1274,6 @@
   }
 
   /* トップページ 見積もり */
-  .index-mitumori h2 {
-    letter-spacing:3px;
-  }
-  .index-mitumori-button {
-  }
   .index-mitumori-button a {
     font-size:26px;
     letter-spacing:3px;
@@ -1521,9 +1314,6 @@
   }
   .index_top > ul > li:last-child {
     width:100%;
-  }
-  .index_top h2 {
-    padding-top:5px;
   }
   .index_top_description {
     margin-top:5px;
