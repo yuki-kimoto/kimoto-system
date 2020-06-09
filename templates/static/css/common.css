@@ -1,5 +1,13 @@
 /* Default settings */
   
+  /* パーツとして使っているクラス名 */
+  /*
+    .inside
+    .left
+    .right
+    .description
+  */
+  
   /* all */
   * {
     margin:0;
@@ -16,19 +24,46 @@
     color:#0000EE;
     text-decoration:none;
   }
-
-  /* h2のデフォルトを定義。必要があれば、カスタマイズする */
+  
+  /* コンテンツを表示する中心の領域のデフォルト */
+  .inside {
+    width:1310px;
+    margin:0 auto;
+  }
+  
+  /* ページタイトル(h2)のデフォルトを定義。 */
   h2 {
-    background: #1E65A6;
     margin:0;
-    padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
     color:white;
-    padding-top:30px;
     font-size:26px;
+    line-height: 1.5;
+    
+    /* 一時的 */
+    padding-top:30px;
+    background: #1E65A6;
   }
-  .page_title {
+  
+  /* ページの解説のデフォルト */
+  .description {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+
+  /* ページの副見出し(h3)のデフォルトを定義。必要があれば、カスタマイズする */
+  h3 {
+    font-size:24px;
+    text-align:center;
+    margin:50px 0 40px 0;
+    letter-spacing:1px;
+  }
+  
+  .page_top {
     background: #1E65A6;
     margin:0;
     padding:1px 0 0px 0px;
@@ -39,17 +74,20 @@
     font-size:26px;
     font-weight:bold;
   }
-  
-  /* h3のデフォルトを定義。必要があれば、カスタマイズする */
-  h3 {
-    font-size:24px;
-    text-align:center;
-    margin:50px 0 40px 0;
-    letter-spacing:1px;
-  }
-  
   .page_tilte {
     background: #1E65A6;
+    margin:0;
+    padding:1px 0 0px 0px;
+    letter-spacing:1px;
+    text-align:center;
+    color:white;
+    padding-top:30px;
+    font-size:26px;
+  }
+  .page_description {
+    text-align:center;
+    font-size:20px;
+    margin-top:18px;
   }
   
   /* footer */
@@ -169,33 +207,30 @@
   .index {
     background:#F8F9FA;
   }
-  .index .page_top {
+  
+  /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
+  .page_top_left_fix_image {
     background: #1E65A6;
-    width:100%;
-    border-bottom:1px solid #eef;
+  }
+  .page_top_left_fix_image > .inside {
     color:white;
-  }
-  .index .page_top ul {
-    max-width:1310px;
-    margin:0 auto;
     display:flex;
-    flex-wrap:wrap;
   }
-  .index .page_top > ul > li:first-child {
+  .page_top_left_fix_image > .inside > .left {
     width:250px;
   }
-  .index .page_top > ul > li:last-child {
+  .page_top_left_fix_image > .inside > .right {
     width:calc(100% - 250px);
-    padding-bottom:30px;
   }
-  .index .page_top img {
+  .page_top_left_fix_image > .inside > .right > h2 {
+    padding-top:30px;
+  }
+  .page_top_left_fix_image > .inside > .right > .description {
+    padding-top:15px;
+  }
+  .page_top_left_fix_image > .inside > .left > img {
     width:100%;
     display:block;
-  }
-  .index .page_description {
-    text-align:center;
-    font-size:20px;
-    margin-top:18px;
   }
   
   .index_link_allow {
