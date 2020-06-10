@@ -235,6 +235,21 @@
     width:100%;
     display:block;
   }
+
+  /* タイトル部分に写真を表示するページトップ領域で使うコンポーネント */
+  .page_top_title_image {
+    background: #1E65A6;
+    text-align:center;
+  }
+  .page_top_title_image > h2 {
+    padding-top:30px;
+    height:300px;
+    padding-top:140px;
+    font-size:30px;
+  }
+  .page_top_title_image > .description {
+    padding-top:30px;
+  }
   
   .index_link_allow {
   }
@@ -684,20 +699,12 @@
 
   
   /* 会社情報 */
-  .corporate_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
+
+  .corporate > .page_top_title_image > h2 {
+    background:url(/images/corporate/corporate-image.jpg);
+    background-position:50% 50%;
   }
 
-  .corporate h3 {
-  }
   .corporate h4 {
     font-size:18px;
     font-weight:bold;
@@ -808,6 +815,11 @@
    .recruit {
      padding-bottom:80px;
    }
+  .recruit > .page_top_title_image > h2 {
+    background:url(/images/recruit/recruit-image.jpg);
+    background-position:50% 50%;
+  }
+
   .recruit_message {
     text-align:center;
     color:white;
