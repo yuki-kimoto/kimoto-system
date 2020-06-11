@@ -86,7 +86,7 @@
   
   /* container */
   .container {
-    background:#F2EFE;
+    background:#F8F9FA;
   }
   
   /* main */
@@ -103,7 +103,6 @@
   
   /* entry */
   .entry {
-    background:white;
   }
   
   /* side */
@@ -181,7 +180,6 @@
   }
   
   .index {
-    background:#F8F9FA;
   }
   
   /* 左側に写真を表示するためのページトップ領域で使うコンポーネント */
