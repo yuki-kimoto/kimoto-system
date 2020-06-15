@@ -238,6 +238,43 @@
     height:50px;
     border-radius:25px;
   }
+
+  /* 3コラムカード */
+  .card_column3_basic {
+    padding:50px 0;
+    padding-bottom:50px;
+  }
+  .card_column3_basic h3 {
+  }
+  .card_column3_basic ul {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .card_column3_basic .title {
+    color:red;
+  }
+  .card_column3_basic li {
+    width:32.3%;
+    margin:0 0.5%;
+  }
+  .card_column3_basic a,.card_column3_basic a:visited {
+    display:block;
+    width:100%;
+    padding:30px 15px;
+    font-size:20px;
+    text-align:center;
+    color:#333;
+    border-radius:6px;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,.14);
+    height:100%;
+  }
+  .card_column3_basic_title {
+    font-size:25px;
+    font-weight:bold;
+  }
+
+
   /* トップページ サービス */
   .index_service {
     padding:50px 0;
@@ -1364,4 +1401,10 @@
   .achieve li {
     width:100%;
   }
+
+  .card_column3_basic li {
+    width:calc(100% - 30px);
+    margin:15px auto;
+  }
+
 }
