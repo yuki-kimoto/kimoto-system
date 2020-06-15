@@ -48,19 +48,20 @@
     color:inherit;
   }
   
-  /* ページの解説のデフォルト */
-  .description {
+  /* ページトップ基本 */
+  .page_top_basic {
+    background: #1E65A6;
+  }
+  
+  .page_top_basic .description {
     text-align: center;
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 1.9;
     font-size: 16px;
-    
-    /* 一時的 */
     padding-top:30px;
     padding-bottom:30px;
-    background: #1E65A6;
   }
 
   /* ページの副見出し(h3)のデフォルトを定義。必要があれば、カスタマイズする */
@@ -186,23 +187,32 @@
   .page_top_left_fix_image {
     background: #1E65A6;
   }
-  .page_top_left_fix_image > .inside {
+  .page_top_left_fix_image .inside {
     color:white;
     display:flex;
   }
-  .page_top_left_fix_image > .inside > .left {
+  .page_top_left_fix_image  .left {
     width:250px;
   }
-  .page_top_left_fix_image > .inside > .right {
+  .page_top_left_fix_image  .right {
     width:calc(100% - 250px);
   }
-  .page_top_left_fix_image > .inside > .right > h2 {
+  .page_top_left_fix_image  .right > h2 {
     padding-top:30px;
   }
-  .page_top_left_fix_image > .inside > .right > .description {
+  .page_top_left_fix_image  .description {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    font-size: 16px;
+    padding-top:30px;
+    padding-bottom:30px;
+    background: #1E65A6;
     padding-top:15px;
   }
-  .page_top_left_fix_image > .inside > .left > img {
+  .page_top_left_fix_image  img {
     width:100%;
     display:block;
   }
@@ -212,13 +222,22 @@
     background: #1E65A6;
     text-align:center;
   }
-  .page_top_title_image > h2 {
+  .page_top_title_image h2 {
     padding-top:30px;
     height:300px;
     padding-top:140px;
     font-size:30px;
   }
-  .page_top_title_image > .description {
+  .page_top_title_image .description {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    font-size: 16px;
+    padding-top:30px;
+    padding-bottom:30px;
+    background: #1E65A6;
     padding-top:30px;
   }
   
@@ -354,55 +373,25 @@
   }
   
   /* トップページ ニュース */
-  .index-news {
+  .index_news {
     padding:50px 0;
   }
-  .index-news table {
+  .index_news table {
     width:calc(100% - 30px);
     max-width:800px;
     margin-left:auto;
     margin-right:auto;
     margin-top:15px;
   }
-  .index-news th {
+  .index_news th {
     white-space:nowrap;
     padding:15px;
     text-align:left;
   }
-  .index-news td {
+  .index_news td {
     padding:15px;
   }
   
-  /* トップページ 会社案内 */
-  .index-content-list {
-    padding:30px 0 30px 0;
-  }
-  .index-content-list a, .index-content-list a:visited {
-    color:#787890;
-    display:block;
-  }
-  .index-content-list ul {
-    display:flex;
-    flex-wrap:wrap;
-    width:calc(100% - 30px);
-    margin:0 auto;
-  }
-  .index-content-list li {
-    width:33.3%;
-    text-align:center;
-    font-size:15px;
-    line-height:1.8;
-  }
-  .index-content-list b {
-    letter-spacing:2px;
-    margin-bottom:5px;
-    font-size:105%;
-    display:block;
-  }
-  .index-content-list a:hover {
-    opacity:0.8;
-  }
-
   /* トップページ 見積もり */
   .index-mitumori {
     border-top:1px solid #eeeeef;
@@ -466,20 +455,6 @@
   .reason_entry {
     padding-bottom:50px;
   }
-  .reason_entry_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .reason_entry h3 {
-  }
   .reason_entry h4 {
     font-size:18px;
     font-weight:bold;
@@ -501,20 +476,6 @@
   /* サービス */
   .services {
     padding-bottom:50px;
-  }
-  .services_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .services h3 {
   }
   .services h4 {
     font-size:18px;
@@ -569,19 +530,6 @@
   .service_entry {
     padding-bottom:50px;
   }
-  .service_entry_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-  .service_entry h3 {
-  }
   .service_entry h4 {
     font-size:18px;
     font-weight:bold;
@@ -601,19 +549,6 @@
   }
 
   /* 開発の流れ */
-  .service_perl_web_devel_flow {
-  }
-  .service_perl_web_devel_flow_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
   .service_perl_web_devel_flow h3 {
     max-width:900px;
     text-align:left;
@@ -647,20 +582,6 @@
   /* 開発実績 */
   .achieve {
     padding-bottom:50px;
-  }
-  .achieve_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .achieve h3 {
   }
   .achieve h4 {
     font-size:18px;
@@ -759,20 +680,6 @@
   }
 
   /* 学習教材 */
-  .learning_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #2E75B6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-
-  .learning h3 {
-  }
   .learning h4 {
     font-size:18px;
     font-weight:bold;
@@ -826,26 +733,6 @@
   .recruit > .page_top_title_image > h2 {
     background:url(/images/recruit/recruit-image.jpg);
     background-position:50% 50%;
-  }
-
-  .recruit_message {
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    background: #1E65A6;
-    background-size:4px 4px;
-    padding:13px 0;
-    letter-spacing:1px;
-    line-height:1.9;
-    font-size:16px;
-  }
-  
-  .recruit_description {
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    color:#333;
-    text-align:center;
   }
 
   .recruit h3 {
@@ -1106,8 +993,6 @@
   /* 開発実績 個別記事 */
   .achieve_entry {
     padding:30px 0;
-    width:calc(100% - 30px);
-    max-width:800px;
     margin:0 auto;
   }
   .achieve_entry h3 {
@@ -1260,6 +1145,36 @@
     border-radius:5px;
   }
 
+  /* トップページ 会社案内 */
+  .footer_content {
+    padding:30px 0 30px 0;
+  }
+  .footer_content a, .footer_content a:visited {
+    color:#787890;
+    display:block;
+  }
+  .footer_content ul {
+    display:flex;
+    flex-wrap:wrap;
+    width:calc(100% - 30px);
+    margin:0 auto;
+  }
+  .footer_content li {
+    width:33.3%;
+    text-align:center;
+    font-size:15px;
+    line-height:1.8;
+  }
+  .footer_content b {
+    letter-spacing:2px;
+    margin-bottom:5px;
+    font-size:105%;
+    display:block;
+  }
+  .footer_content a:hover {
+    opacity:0.8;
+  }
+
 
 /* Tablet and Smart phone */
 @media only screen and (max-width:960px) {
@@ -1336,7 +1251,7 @@
   }
   
   /* コンテンツ一覧 */
-  .index-content-list li {
+  .footer_content li {
     width:50%;
   }
 
@@ -1366,24 +1281,24 @@
   .page_top_left_fix_image {
     background: #1E65A6;
   }
-  .page_top_left_fix_image > .inside {
+  .page_top_left_fix_image .inside {
     color:white;
     display:flex;
     flex-wrap:wrap;
   }
-  .page_top_left_fix_image > .inside > .left {
+  .page_top_left_fix_image .left {
     width:100%;
   }
-  .page_top_left_fix_image > .inside > .right {
+  .page_top_left_fix_image .right {
     width:100%;
   }
-  .page_top_left_fix_image > .inside > .right > h2 {
+  .page_top_left_fix_image h2 {
     padding-top:30px;
   }
-  .page_top_left_fix_image > .inside > .right > .description {
+  .page_top_left_fix_image .description {
     padding-top:15px;
   }
-  .page_top_left_fix_image > .inside > .left > img {
+  .page_top_left_fix_image img {
     width:210px;
     margin-left:auto;
     margin-right:auto;
