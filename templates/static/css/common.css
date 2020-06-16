@@ -29,7 +29,7 @@
   .inside {
     max-width:1310px;
     margin:0 auto;
-    padding:0 15px;
+    padding:0 12px;
   }
   
   /* ページタイトル(h2)のデフォルトを定義。 */
@@ -69,7 +69,7 @@
   h3 {
     font-size:24px;
     text-align:center;
-    margin:50px 0 40px 0;
+    margin:70px 0 40px 0;
     letter-spacing:1px;
   }
   
@@ -261,8 +261,6 @@
 
   /* 3コラムカード */
   .card_column3_basic {
-    padding:50px 0;
-    padding-bottom:50px;
   }
   .card_column3_basic h3 {
   }
@@ -303,7 +301,6 @@
   .index_service h3 {
   }
   .index_service ul {
-    width:calc(100% - 16px);
     margin-left:auto;
     margin-right:auto;
   }
@@ -348,7 +345,6 @@
     font-size:17px;
   }
   .index_why_perl ul {
-    width:calc(100% - 16px);
     margin-left:auto;
     margin-right:auto;
   }
@@ -378,7 +374,6 @@
     padding:50px 0;
   }
   .index_news table {
-    width:calc(100% - 30px);
     max-width:800px;
     margin-left:auto;
     margin-right:auto;
@@ -410,7 +405,6 @@
     padding:25px 0;
     border-radius:5px;
     margin-bottom:25px;
-    width:calc(100% - 30px);
     max-width:650px;
     margin-left:auto;
     margin-right:auto;
@@ -493,7 +487,6 @@
   }
 
   .services ul {
-    width:calc(100% - 16px);
     margin-left:auto;
     margin-right:auto;
     display:flex;
@@ -557,7 +550,6 @@
     margin-right:auto;
   }
   .service_perl_web_devel_flow p {
-    width:calc(100% - 30px);
     max-width:900px;
     margin-left:auto;
     margin-right:auto;
@@ -721,7 +713,6 @@
   
   /* アクセス */
   .access-container {
-    width:calc(100% - 30px);
     max-width:1080px;
     margin-left:auto;
     margin-right:auto;
@@ -843,7 +834,6 @@
     text-align:center;
   }
   .message p {
-    width:calc(100% - 30px);
     max-width:680px;
     margin-left:auto;
     margin-right:auto;
@@ -868,7 +858,6 @@
     padding-bottom:20px;
   }
   .mail-form form {
-    width:calc(100% - 30px);
     max-width:600px;
     margin-left:auto;
     margin-right:auto;
@@ -939,7 +928,6 @@
     cursor:pointer;
   }
   .mail-form-success {
-    width:calc(100% - 30px);
     max-width:600px;
     margin:30px auto;
     padding:20px 20px;
@@ -951,7 +939,6 @@
     display:none;
   }
   .mail-form-errors {
-    width:calc(100% - 30px);
     max-width:600px;
     margin:30px auto;
     background:#fff6f5;
@@ -1012,14 +999,17 @@
     background:url(/images/achieve/check.png) no-repeat;
     background-size:16px;
     background-position:13px 17px;
+    background-color:white;
   }
   .achieve_entry li:last-child {
     border-bottom:1px solid #ddd;
   }
   .achieve_entry table {
+    margin:0 auto;
     margin-top:15px;
     border-collapse:collapse;
     width:100%;
+    background:white;
   }
   .achieve_entry td, .achieve_entry th {
     border:1px solid #dddde0;
@@ -1080,7 +1070,6 @@
 
   /* よくある質問 FAQ */
   .faq_item {
-    width:calc(100% - 30px);
     max-width:900px;
     margin:0 auto 50px; auto;
   }
@@ -1109,7 +1098,6 @@
   .faq_question_content {
     border:1px solid #ddd;
     padding:20px;
-    width:calc(100% - 50px);
     color:#000;
     background:#fcfeff;
     line-height:1.8;
@@ -1139,7 +1127,6 @@
   .faq_answer_content {
     border:1px solid #ddd;
     padding:20px;
-    width:calc(100% - 50px);
     background:#fcfeff;
     line-height:1.8;
     color:#111;
@@ -1157,7 +1144,6 @@
   .footer_content ul {
     display:flex;
     flex-wrap:wrap;
-    width:calc(100% - 30px);
     margin:0 auto;
   }
   .footer_content li {
@@ -1319,7 +1305,6 @@
   }
 
   .card_column3_basic li {
-    width:calc(100% - 30px);
     margin:15px auto;
   }
 
