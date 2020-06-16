@@ -29,6 +29,7 @@
   .inside {
     max-width:1310px;
     margin:0 auto;
+    padding:0 15px;
   }
   
   /* ページタイトル(h2)のデフォルトを定義。 */
