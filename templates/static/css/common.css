@@ -304,8 +304,7 @@
     margin-right:auto;
   }
   .index_service li {
-    margin-left:10px;
-    margin-right:10px;
+    margin: 0 auto;
     margin-bottom:20px;
   }
   .index_service a,.index_service a:visited {
