@@ -1053,6 +1053,7 @@
 
   /* よくある質問 FAQ */
   .faq_item {
+    max-width:1080px;
     margin:0 auto 50px; auto;
   }
   .faq_question {
@@ -1060,22 +1061,23 @@
     margin-bottom:10px;
   }
   .faq_question_header {
-    width:50px;
+    width:80px;
     text-align:center;
     font-weight:bold;
-    padding-top:15px;
+    padding-top:22px;
   }
   .faq_question_header b {
     display:block;
     background:#f73434;
     color:white;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
     margin-left:auto;
     margin-right:auto;
     vertical-align:-10px;
-    padding-top:3px;
-    border-radius:15px;
+    padding-top:2px;
+    border-radius:25px;
+    font-size:23px;
   }
   .faq_question_content {
     border:1px solid #ddd;
@@ -1084,27 +1086,30 @@
     background:white;
     line-height:1.8;
     box-shadow:0 2px 5px rgba(0,0,0,.14);
+    width:calc(100% - 80px);
+    line-height:1.9;
+    letter-spacing:1px;
   }
   .faq_answer {
     display:flex;
   }
   .faq_answer_header {
-    width:50px;
+    width:80px;
     text-align:center;
     font-weight:bold;
-    padding-top:15px;
+    padding-top:22px;
   }
   .faq_answer_header b {
     display:block;
     background:#a3a3a3;
     color:white;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
     margin-left:auto;
     margin-right:auto;
-    vertical-align:-10px;
-    padding-top:3px;
-    border-radius:15px;
+    padding-top:2px;
+    border-radius:25px;
+    font-size:23px;
   }
   .faq_answer_content {
     border:1px solid #ddd;
@@ -1113,6 +1118,9 @@
     line-height:1.8;
     color:#111;
     box-shadow:0 2px 5px rgba(0,0,0,.14);
+    width:calc(100% - 80px);
+    line-height:1.9;
+    letter-spacing:1px;
   }
 
   /* トップページ 会社案内 */
