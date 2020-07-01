@@ -35,7 +35,7 @@ sub run {
 
     # Parse Giblog syntax
     $api->parse_giblog_syntax($data);
-
+    
     # Parse title
     $api->parse_title_from_first_h_tag($data);
 
@@ -48,9 +48,11 @@ sub run {
       $data->{title} = "$data->{title} - $site_title";
     }
 
+    # もしパスにblogが含まれていた<div class="blog"></div>で囲む
     # Add page link only blog
     if ($data->{file} =~ /\bblog\b/) {
       $api->add_page_link_to_first_h_tag($data, {root => 'index.html'});
+      $data->{content} = qq(<div class="blog">\n$data->{content}\n</div>);
     }
     
     # Parse description
