@@ -52,7 +52,7 @@ sub run {
     # Add page link only blog
     if ($data->{file} =~ /\bblog\b/) {
       $api->add_page_link_to_first_h_tag($data, {root => 'index.html'});
-      $data->{content} = qq(<div class="blog">\n$data->{content}\n</div>);
+      $data->{content} = qq(<div class="blog">\n<div class="inside">$data->{content}\n</div></div>);
     }
     
     # Parse description
