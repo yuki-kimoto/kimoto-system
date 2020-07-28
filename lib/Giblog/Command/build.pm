@@ -111,10 +111,7 @@ sub create_list {
   }
 </style>
 <div class="list">
-<h2>ニュース</h2>
-<div class="description">
-  木本システムの新規サービス情報をお届け。
-</div>
+<h2>新着記事</h2>
 <div class="inside">
 EOS
     $content .= "<ul>\n";
