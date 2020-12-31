@@ -176,6 +176,7 @@
   /* tags */
   .header_site_title {
     width:180px;
+    padding-left:10px;
   }
   .header_site_title a {
     display:block;
@@ -1292,7 +1293,7 @@
     flex-wrap:wrap;
   }
   .header_site_title {
-    width:130px;
+    width:150px;
   }
   .header_site_title a {
   }
@@ -1339,7 +1340,7 @@
     width:100%;
   }
   .header_company_name {
-    width:calc(100% - 130px - 58px);
+    width:calc(100% - 150px - 58px);
     border-bottom:1px solid #eeeeef;
     padding-left:0;
     padding-right:0;
