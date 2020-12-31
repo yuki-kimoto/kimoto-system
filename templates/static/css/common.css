@@ -185,7 +185,7 @@
     height:100%;
   }
   .header_company_name {
-    width:calc(100% - 180px - 115px * 6);
+    width:calc(100% - 180px - 115px * 5);
     background:white;
     padding-top:10px;
     padding-left:34px;
@@ -207,7 +207,7 @@
     display:none;
   }
   .header_menu {
-    width:calc(115px * 6);
+    width:calc(115px * 5);
     display:flex;
     background:white;
   }
