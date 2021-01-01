@@ -27,7 +27,7 @@
   
   /* コンテンツを表示する中心の領域のデフォルト */
   .inside {
-    max-width:1310px;
+    max-width:860px;
     margin:0 auto;
     padding:0 16px;
   }
@@ -1048,6 +1048,7 @@
   .achieve_entry {
     padding:0;
     margin:0 auto;
+    padding-bottom:50px;
   }
   .achieve_entry h3 {
   }
