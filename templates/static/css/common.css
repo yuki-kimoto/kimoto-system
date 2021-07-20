@@ -792,12 +792,10 @@
     padding-bottom:30px;
   }
   .mail-form h2 {
-    background: #f32097;
     margin:0;
     padding:1px 0 0px 0px;
     letter-spacing:1px;
     text-align:center;
-    color:white;
     padding-top:23px;
     padding-bottom:20px;
   }
@@ -820,7 +818,7 @@
     width:100%;
     padding:10px 10px;
     font-size:20px;
-    border:1px solid #f5b2df;
+    border:1px solid #609D37;
   }
   .mail-form input[type=radio] {
     display:none;
@@ -851,14 +849,14 @@
     width:100%;
     padding:10px 10px;
     font-size:20px;
-    border:1px solid #e3c791;
+    border:1px solid #609D37;
   }
   .mail-form textarea {
     width:100%;
     min-height:400px;
     font-size:20px;
     padding:10px 10px;
-    border:1px solid #f5b2df;
+    border:1px solid #609D37;
   }
   .mail-form button {
     width:100%;
