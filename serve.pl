@@ -72,15 +72,11 @@ app->hook(before_dispatch => sub {
       print $in_fh $body;
       close $in_fh;
       $output = `$^X -pe "" $in_file | $^X $script_name`;
-      if ($?) {
-        $c->res->code('505');
-        $c->render(text => "Internal Server Error");
-      }
       unlink $in_file;
     }
     
-    unless (defined $output) {
-      die "Output is not defined";
+    unless (length $output) {
+      die "Fail to create output. Maybe CGI script have errors.";
     }
     
     # Header part and body part
