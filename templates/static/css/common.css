@@ -193,7 +193,8 @@
   /* tags */
   .header_site_title {
     width:180px;
-    padding-left:10px;
+    padding-left:19px;
+    padding-top:4px;
   }
   .header_site_title a {
     display:block;
@@ -204,14 +205,13 @@
   .header_company_name {
     width:calc(100% - 180px - 115px * 5);
     background:white;
-    padding-top:10px;
+    padding-top:17px;
     padding-left:34px;
     line-height:1.4;
   }
   .header_company_name h1 {
-    font-size:16px;
     color:#666;
-    font-size:14px;
+    font-size:18px;
   }
   .header_company_name p {
     display:block;
